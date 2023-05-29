@@ -8,14 +8,14 @@
     "lint:check": "eslint --ignore-path .eslintignore --ext .js,.ts .",
     "lint:fix": "eslint --fix",
     "prettier:check": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
-    "lint-prettier": "npm run lint:check &&  prettier:check",
+    "lint-prettier": "npm run lint:check && npm run prettier:check",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
   "author": "Ahatasam Siam",
   "license": "ISC",
   "lint-staged": {
-    "src/**/*.ts": "npm run lint-prettier"
+    "src/**/*.{js,jsx,ts,tsx}":["npm run lint-prettier"]
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
