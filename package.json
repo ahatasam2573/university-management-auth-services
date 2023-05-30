@@ -15,7 +15,7 @@
   "author": "Ahatasam Siam",
   "license": "ISC",
   "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx}":["npm run lint-prettier"]
+    "src/**/*.ts": "npm run lint-prettier"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",
